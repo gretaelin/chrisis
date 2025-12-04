@@ -3,7 +3,7 @@
 export type Step = {
   id: number;
   title: string;
-  image: string;
+  image?: string;
   code: string;
   hint: string;
   fallbackQuestion: string;
@@ -20,9 +20,10 @@ export const STEPS: Step[] = [
     hint:
       "Hvor duften af kaffe og småkager gror,\n" +
       "ved træets hjerter eventyret bor.",
-    fallbackQuestion: "Hvad farve er de fleste julehjerter på træet i køkkenet?",
-    fallbackChoices: ["Røde", "Gule", "Blå"],
-    fallbackCorrect: "Røde",
+    fallbackQuestion:
+      "Hvilken farve har flest af julehjerterne på træet i køkkenet?",
+    fallbackChoices: ["Brune / naturfarvede", "Røde", "Guld"],
+    fallbackCorrect: "Brune / naturfarvede",
   },
   {
     id: 2,
@@ -30,44 +31,45 @@ export const STEPS: Step[] = [
     image: "/steps/step2.jpg",
     code: "GLOEGG202",
     hint:
-      "Hvor man hviler fødder og finder ro,\n" +
-      "gemmer nissen endnu et lille ‘go’.",
-    fallbackQuestion: "Hvad står der på skiltet på væggen ved sofaområdet?",
-    fallbackChoices: ["Relax", "Take a break", "Chill zone"],
-    fallbackCorrect: "Take a break",
+      "På trappen mod første, hvor du løfter dit blik,\n" +
+      "ser du sofaens underside i ét, klart øjeblik.\n" +
+      "Her hvor man hviler og finder lidt ro,\n" +
+      "har nissen gemt endnu et lille ‘go’.",
+    fallbackQuestion:
+      "Hvilken krydret drik er en klassisk favorit i juletiden?",
+    fallbackChoices: ["Gløgg", "Kakao med skumfiduser", "Cola"],
+    fallbackCorrect: "Gløgg",
   },
   {
     id: 3,
-    title: "Bordfodbolden",
-    image: "/steps/step3.jpg",
+    title: "Fußball",
+    image: "/steps/step3.jpeg",
     code: "TOGETHERPLAY",
     hint:
-      "Her spilles der kampe med grin og gevind,\n" +
-      "en bold og lidt held – og du er på vej i vind.",
+      "Ved bordfußballen gemmer nissen sig klogt —\n" +
+      "kig helt ned, helt under, hvor kun gulvet har udsigt.",
     fallbackQuestion: "Hvor mange spillere er der i alt på et bordfodboldhold?",
-    fallbackChoices: ["11", "4", "8"],
+    fallbackChoices: ["6", "4", "8"],
     fallbackCorrect: "4",
   },
   {
     id: 4,
     title: "Planten ved Christinas plads",
-    image: "/steps/step4.jpg",
+    image: "/steps/step4.jpeg",
     code: "GAVEREGN808",
-    hint:
-      "Nu skal du tæt på kolleger – måske, måske ej,\n" +
-      "blot kig ved planten, så finder du vej.",
+    hint: "Ved Christinas plads står en plante. Hintet ligger ikke i den — men under den.",
     fallbackQuestion: "Hvilken type plante står ved Christinas bord?",
     fallbackChoices: ["Monstera", "Fredslilje", "ZZ-plante"],
-    fallbackCorrect: "Monstera",
+    fallbackCorrect: "ZZ-plante",
   },
   {
     id: 5,
-    title: "Lidias blå hue",
+    title: "Lidias blå hat",
     image: "/steps/step5.jpg",
     code: "PANDA77",
     hint:
-      "Når vinterens kulde gør kinderne røde,\n" +
-      "kan Lidia varme sig med en blå, blød hue.",
+      "På skrivebordet ligger en blå hat lidt på skrå —\n" +
+      "nisser elsker gemmesteder, og her er der noget at nå.",
     fallbackQuestion: "Hvilken farve har Lidias hue?",
     fallbackChoices: ["Sort", "Blå", "Rød"],
     fallbackCorrect: "Blå",
@@ -86,12 +88,12 @@ export const STEPS: Step[] = [
   },
   {
     id: 7,
-    title: "København / Amager-hintet",
-    image: "/steps/step7.jpg",
+    title: "Copenhagen",
+    image: "/steps/step7.jpeg",
     code: "AMAGER645",
     hint:
-      "En rejse i tanken – til byen så kær,\n" +
-      "en bro, en ø, du ved sikkert hvor det er.",
+      "I mødelokalet skal du se dig omkring —\n" +
+      "kig helt op på hylden, der ligger næste ting.",
     fallbackQuestion: "Hvilken ø del af København ligger Lufthavnen på?",
     fallbackChoices: ["Refshaleøen", "Amager", "Slotsholmen"],
     fallbackCorrect: "Amager",
@@ -111,7 +113,6 @@ export const STEPS: Step[] = [
   {
     id: 9,
     title: "Sunes bord",
-    image: "/steps/step9.jpg",
     code: "RYDOPSUNE1234",
     hint:
       "Nu går turen til et bord med lidt af hvert,\n" +
@@ -123,7 +124,7 @@ export const STEPS: Step[] = [
   {
     id: 10,
     title: "Henriettes stol – under sædet",
-    image: "/steps/step10.jpg",
+    image: "/steps/step10.jpeg",
     code: "RISENGROED909",
     hint:
       "Sidst finder du spor hvor man hviler sin ryg,\n" +

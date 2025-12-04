@@ -140,12 +140,14 @@ export default function Page() {
     if (selectedChoice === currentStep.fallbackCorrect) {
       goNext();
     } else {
-      setError("Det var ikke helt rigtigt. Kig dig lidt mere omkring og prøv igen 👀");
+      setError(
+        "Det var ikke helt rigtigt. Kig dig lidt mere omkring og prøv igen 👀"
+      );
     }
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-red-700 via-red-800 to-green-900 flex items-center justify-center p-4 relative">
+    <div className="min-h-screen bg-gradient-to-b from-red-700 via-red-800 to-black flex items-center justify-center p-4 relative">
       {/* Sne-overlay – byt / fjern hvis du har en anden fil */}
       <div className="absolute inset-0 pointer-events-none opacity-20 bg-[url('/snow.gif')] bg-cover" />
 
@@ -182,13 +184,13 @@ export default function Page() {
           <section className="space-y-4">
             <p className="text-gray-800 text-sm">
               Du får vist et billede af et sted på kontoret. Gå derhen, find
-              sedlen med koden og skriv koden ind her i app’en. Til sidst
-              venter der en kold, lækker præmie. 🎁
+              sedlen med koden og skriv koden ind her i app’en. Til sidst venter
+              der en kold, lækker præmie. 🎁
             </p>
 
             <button
               onClick={startNew}
-              className="w-full bg-red-600 hover:bg-red-700 text-white font-semibold py-3 rounded-xl shadow-sm border border-red-700"
+              className="w-full bg-red-700 hover:bg-red-800 text-white font-semibold py-3 rounded-xl shadow-sm border border-red-700"
             >
               🎄 Start juleløbet
             </button>
@@ -215,13 +217,19 @@ export default function Page() {
             </div>
 
             <div className="rounded-xl overflow-hidden shadow-md border border-red-100">
-              <Image
-                src={currentStep.image}
-                alt={currentStep.title}
-                width={600}
-                height={400}
-                className="w-full object-cover"
-              />
+              {currentStep.image ? (
+                <Image
+                  src={currentStep.image}
+                  alt={currentStep.title}
+                  width={600}
+                  height={400}
+                  className="w-full object-cover"
+                />
+              ) : (
+                <div className="w-full h-48 bg-gray-200 flex items-center justify-center text-gray-500">
+                  Det var umuligt for nissen at tage et billede her!
+                </div>
+              )}
             </div>
 
             <p className="whitespace-pre-line text-sm text-gray-800 border-l-4 border-green-500 pl-3">
@@ -299,7 +307,7 @@ export default function Page() {
             )}
 
             {error && (
-              <p className="text-sm text-red-600 font-semibold text-center">
+              <p className="text-sm text-red-700 font-semibold text-center">
                 {error}
               </p>
             )}
