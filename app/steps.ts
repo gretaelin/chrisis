@@ -117,21 +117,20 @@ export const STEPS: Step[] = [
     hint:
       "Ved Sunes bord er der altid lidt at se —\n" +
       "løft blikket mod skærmene, og kig helt under én af dem.",
-    fallbackQuestion: "Hvilket dyr står i miniform på Sunes bord?",
-    fallbackChoices: ["En panda", "En elefant", "En pingvin"],
-    fallbackCorrect: "En elefant",
+    fallbackQuestion: "Hvad står der som miniversion på Sunes bord?",
+    fallbackChoices: ["En Vikan-spand", "En kaffekop", "En julemand"],
+    fallbackCorrect: "En Vikan-spand",
   },
   {
     id: 10,
     title: "Henriettes stol – under sædet",
     image: "/steps/step10.jpeg",
     code: "RISENGROED909",
-    hint:
-      "Sidst finder du spor hvor man hviler sin ryg,\n" +
-      "under Henriettes stol – endnu et nisse-ryg.",
-    fallbackQuestion: "Hvad står der som miniversion på Sunes bord?",
-    fallbackChoices: ["En Vikan-spand", "En kaffekop", "En julemand"],
-    fallbackCorrect: "En Vikan-spand",
+    hint: "Under sædet på Henriettes stol ligger næste kode.",
+    fallbackQuestion:
+      "Hvad plejer nissen at spise juleaften ifølge traditionen?",
+    fallbackChoices: ["Risengrød", "Kebab", "Tacos"],
+    fallbackCorrect: "Risengrød",
   },
 ];
 
