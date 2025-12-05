@@ -115,8 +115,8 @@ export const STEPS: Step[] = [
     title: "Sunes bord",
     code: "RYDOPSUNE1234",
     hint:
-      "Nu går turen til et bord med lidt af hvert,\n" +
-      "kig under tingene – ingen spor er gemt for tæt.",
+      "Ved Sunes bord er der altid lidt at se —\n" +
+    "løft blikket mod skærmene, og kig helt under én af dem.",
     fallbackQuestion: "Hvilket dyr står i miniform på Sunes bord?",
     fallbackChoices: ["En panda", "En elefant", "En pingvin"],
     fallbackCorrect: "En elefant",
@@ -129,14 +129,15 @@ export const STEPS: Step[] = [
     hint:
       "Sidst finder du spor hvor man hviler sin ryg,\n" +
       "under Henriettes stol – endnu et nisse-ryg.",
-    fallbackQuestion: "Hvilken farve er Henriettes stol?",
-    fallbackChoices: ["Sort", "Orange", "Grå"],
-    fallbackCorrect: "Sort",
+    fallbackQuestion:
+    "Hvad står der som miniversion på Sunes bord?",
+    fallbackChoices: ["En Vikan-spand", "En kaffekop", "En julemand"],
+    fallbackCorrect: "En Vikan-spand",
   },
 ];
 
 export const FINAL_PRIZE = {
-  title: "Den sidste skat",
+  title: "Den skjulte præmie",
   image: "/steps/prize.jpg",
   locationHint:
     "Den kølige hule hvor julegodter bor,\n" +
