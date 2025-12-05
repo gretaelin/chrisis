@@ -104,8 +104,8 @@ export const STEPS: Step[] = [
     image: "/steps/step8.jpg",
     code: "JULEMAND949",
     hint:
-      "Se mod logoet hvor nisserne ler,\n" +
-      "en hue der hænger – hvad mon der sker?",
+      "Ved Iterator-logoet hænger en julehue.—\n" +
+      "Led ikke udenpå — koden ligger inde i huen.",
     fallbackQuestion: "Hvilken farve er julehuen ved logoet?",
     fallbackChoices: ["Rød", "Grøn", "Hvid"],
     fallbackCorrect: "Rød",
@@ -116,7 +116,7 @@ export const STEPS: Step[] = [
     code: "RYDOPSUNE1234",
     hint:
       "Ved Sunes bord er der altid lidt at se —\n" +
-    "løft blikket mod skærmene, og kig helt under én af dem.",
+      "løft blikket mod skærmene, og kig helt under én af dem.",
     fallbackQuestion: "Hvilket dyr står i miniform på Sunes bord?",
     fallbackChoices: ["En panda", "En elefant", "En pingvin"],
     fallbackCorrect: "En elefant",
@@ -129,8 +129,7 @@ export const STEPS: Step[] = [
     hint:
       "Sidst finder du spor hvor man hviler sin ryg,\n" +
       "under Henriettes stol – endnu et nisse-ryg.",
-    fallbackQuestion:
-    "Hvad står der som miniversion på Sunes bord?",
+    fallbackQuestion: "Hvad står der som miniversion på Sunes bord?",
     fallbackChoices: ["En Vikan-spand", "En kaffekop", "En julemand"],
     fallbackCorrect: "En Vikan-spand",
   },
